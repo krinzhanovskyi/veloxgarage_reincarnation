@@ -27,3 +27,8 @@
   height: 4.5rem;
   object-fit: contain;
 }
+
+.navbar.is-dark .navbar-end .navbar-item[aria-current="page"] {
+  background-color: #141414;
+  color: #fff;
+}
