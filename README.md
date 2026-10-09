@@ -21,10 +21,6 @@ A German-language website for VeloxGarage, a bicycle repair workshop in Zürich.
 │   ├── Partners/            # Partner brand SVGs
 │   ├── Services/            # Service photos
 │   ├── Team_photos/         # Team portraits
-│   ├── Garage_photo.png
-│   ├── Team.png
-│   ├── VeloxGarage.png
-│   └── favicon.ico
 ├── js/
 │   └── nav.js               # Mobile navigation toggle
 ├── index.html               # Haupt Webpage
