@@ -41,17 +41,36 @@
   z-index: 10;
 }
 
-@media screen and (max-width: 1023px) {
-  .navbar-company-name {
-    position: static;
-    flex: 1;
-    min-width: 0;
-    justify-content: center;
-    padding: 0 0.25rem;
-    overflow: hidden;
-    font-size: clamp(0.75rem, 3.8vw, 1rem);
-    text-overflow: ellipsis;
-    transform: none;
-    white-space: nowrap;
-  }
+:root {
+  --brand-pink: #d8317a;
+  --brand-purple: #812b74;
+  --dark-bg: #1a1a1a;
+}
+
+.section {
+  flex: 1;
+}
+
+.primary-color {
+  background: -webkit-linear-gradient(
+    45deg,
+    var(--brand-pink),
+    var(--brand-purple)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button.is-primary.action-btn {
+  background: linear-gradient(
+    90deg,
+    var(--brand-purple) 0%,
+    var(--brand-pink) 100%
+  );
+  border: none;
+  transition: opacity 0.3s ease;
+}
+
+.button.is-primary.action-btn:hover {
+  opacity: 0.8;
 }
