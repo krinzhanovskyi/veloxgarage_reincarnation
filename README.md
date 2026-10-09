@@ -17,7 +17,6 @@ A German-language website for VeloxGarage, a bicycle repair workshop in Zürich.
 │   ├── about.html
 │   ├── contact.html
 │   └── services.html
-├── index.html               # Homepage
 ├── pictures/
 │   ├── Partners/            # Partner brand SVGs
 │   ├── Services/            # Service photos
@@ -28,19 +27,11 @@ A German-language website for VeloxGarage, a bicycle repair workshop in Zürich.
 │   └── favicon.ico
 ├── js/
 │   └── nav.js               # Mobile navigation toggle
+├── index.html               # Haupt Webpage
 ├── style.css                # Site-specific styles
 ├── LICENCE                  # MIT license
 └── README.md
 ```
-
-## Run locally
-
-No build step or package installation is required.
-
-1. Open `index.html` in a browser, or open the project folder in VS Code and use a local web server such as Live Server.
-2. Navigate between pages using the site navigation.
-
-Bulma CSS and jQuery are loaded from CDNs, so an internet connection is needed for those dependencies. The contact form submits to the Formspree endpoint configured in `pages/contact.html`.
 
 ## Technologies
 
