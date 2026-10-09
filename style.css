@@ -1,0 +1,8 @@
+.garage-img {
+  display: block;
+  width: min(100%, 400px);
+  aspect-ratio: 1;
+  margin-inline: auto;
+  object-fit: cover;
+  border-radius: 50%;
+}
