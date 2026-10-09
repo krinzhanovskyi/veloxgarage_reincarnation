@@ -1,41 +1,56 @@
-# VELOXGARAGE (Fictional Company Website)
+# VeloxGarage
 
-A simple and responsive website for a fictional company. This project was developed for educational and demonstration purposes to showcase frontend development, layout, and UI/UX design skills.
+A German-language website for VeloxGarage, a bicycle repair workshop in Zürich. The site is built with static HTML, Bulma, custom CSS, and a small jQuery-powered mobile navigation menu.
 
-## Tech Stack
+## Pages
 
-- **HTML5** - semantic structure
-- **CSS3, Bulma** - styling, Flexbox/Grid, responsiveness
-- **JavaScript (Vanilla)** - basic interactivity (menus, modals)
+- `pages/index.html` — landing page, workshop introduction, partner logos, and appointment call to action.
+- `pages/services.html` — bicycle repair and maintenance services with descriptions and starting prices.
+- `pages/about.html` — workshop story and team profiles.
+- `pages/contact.html` — contact form, address, opening hours, and embedded Google Map.
 
-## Getting Started
+## Project structure
 
-1. Clone the repository:
-
-```bash
-
-git  clone [https://github.com/your-username/repository-name.git](https://github.com/your-username/repository-name.git)
+```text
+.
+├── pages/                   # Website pages
+│   ├── about.html
+│   ├── contact.html
+│   ├── index.html
+│   └── services.html
+├── pictures/
+│   ├── Partners/            # Partner brand SVGs
+│   ├── Services/            # Service photos
+│   ├── Team_photos/         # Team portraits
+│   ├── Garage_photo.png
+│   ├── Team.png
+│   ├── VeloxGarage.png
+│   └── favicon.ico
+├── js/
+│   └── nav.js               # Mobile navigation toggle
+├── style.css                # Site-specific styles
+├── LICENCE                  # MIT license
+└── README.md
 ```
 
-Navigate to the project directory:
-Bash
-cd repository-name
-Open the index.html file in any modern browser (or use the Live Server extension for VS Code).
+## Run locally
 
-## Folder Structure
+No build step or package installation is required.
 
-index.html — main page (Landing Page)
-css/ — stylesheets
-js/ — scripts
-img/ — images, logos, and icons
+1. Open `pages/index.html` in a browser, or open the project folder in VS Code and use a local web server such as Live Server.
+2. Navigate between pages using the site navigation.
 
-## Features
+Bulma CSS and jQuery are loaded from CDNs, so an internet connection is needed for those dependencies. The contact form submits to the Formspree endpoint configured in `pages/contact.html`.
 
-Responsive design for mobile, tablet, and desktop devices
-Navigation menu (hamburger menu for mobile)
-Contact form (mockup/dummy form)
-Services/Products section
+## Technologies
+
+- HTML5 for page structure and content
+- Bulma 0.9.4 for layout and responsive utility classes
+- `style.css` for site-specific styling
+- jQuery 3.7.1 and `js/nav.js` for the mobile navigation menu
+- Google Maps Embed for the location map
+- Formspree for contact form submissions
 
 ## License
 
-This project is open-source and available under the MIT license.
+This project is licensed under the MIT License. See [LICENCE](./LICENCE).
