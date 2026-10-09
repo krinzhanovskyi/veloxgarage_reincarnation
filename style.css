@@ -7,6 +7,15 @@
   border-radius: 50%;
 }
 
+.rounded-image {
+  display: block;
+  width: min(100%, 500px);
+  aspect-ratio: 1;
+  margin-inline: auto;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
 .partner-card {
   display: flex;
   height: 100%;
