@@ -51,6 +51,21 @@
   z-index: 10;
 }
 
+@media screen and (max-width: 1023px) {
+  .navbar-company-name {
+    position: static;
+    flex: 1;
+    min-width: 0;
+    height: auto;
+    justify-content: center;
+    overflow: hidden;
+    font-size: clamp(0.75rem, 3.8vw, 1rem);
+    text-overflow: ellipsis;
+    transform: none;
+    white-space: nowrap;
+  }
+}
+
 :root {
   --brand-pink: #d8317a;
   --brand-purple: #822b75;
