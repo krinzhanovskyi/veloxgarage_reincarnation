@@ -9,6 +9,12 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="pictures/favicon.ico"
+      alt="VeloxGarage Logo"
+    />
   </head>
   <body>
     <header>
@@ -69,7 +75,76 @@
         </div>
       </nav>
     </header>
-    <section></section>
+    <section class="section">
+      <div class="container">
+        <h1 class="title is-2 has-text-centered primary-color mb-6">
+          Kontaktiere uns
+        </h1>
+
+        <div class="columns">
+          <div class="column is-half">
+            <div class="box">
+              <form action="https://formspree.io/f/xwlvozbv" method="POST">
+                <div class="field">
+                  <label class="label" for="name">Name</label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Geben Sie Ihren vollständigen Namen ein"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="field">
+                  <label class="label" for="email">E-Mail</label>
+                  <div class="control">
+                    <input
+                      class="input"
+                      type="email"
+                      id="email"
+                      name="email"
+                      placeholder="Geben Sie Ihre E-Mail-Adresse ein"
+                      required
+                    />
+                  </div>
+                  <p class="help is-danger is-hidden">
+                    Bitte eine gültige E-Mail eingeben.
+                  </p>
+                </div>
+
+                <div class="field">
+                  <label class="label" for="message"
+                    >Nachricht / Anliegen</label
+                  >
+                  <div class="control">
+                    <textarea
+                      class="textarea"
+                      id="message"
+                      name="message"
+                      placeholder="Beschreiben Sie das problem."
+                      required
+                    ></textarea>
+                  </div>
+                </div>
+
+                <div class="field">
+                  <div class="control">
+                    <button
+                      type="submit"
+                      class="button is-primary action-btn is-fullwidth"
+                    >
+                      Nachricht senden
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
     <footer class="footer is-dark-footer">
       <div class="content has-text-centered">
         <p>&copy; 2026 VeloxGarage Zürich.</p>
