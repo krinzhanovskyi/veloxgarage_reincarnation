@@ -9,6 +9,14 @@
       href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="pictures/favicon.ico"
+      alt="VeloxGarage Logo"
+    />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/nav.js"></script>
   </head>
   <body>
     <header>
@@ -28,6 +36,13 @@
           </a>
 
           <a
+            href="index.html"
+            class="navbar-company-name has-text-white is-size-5 is-flex is-align-items-center"
+          >
+            <strong>VeloxGarage AG Zürich</strong>
+          </a>
+
+          <a
             role="button"
             class="navbar-burger"
             aria-label="menu"
@@ -39,20 +54,6 @@
             <span aria-hidden="true"></span>
           </a>
         </div>
-
-        <a
-          href="index.html"
-          class="has-text-white is-size-4 is-flex is-align-items-center"
-          style="
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            height: 100%;
-            z-index: 10;
-          "
-        >
-          <strong>VeloxGarage AG Zürich</strong>
-        </a>
 
         <div id="navbarBasicExample" class="navbar-menu">
           <div class="navbar-end">
